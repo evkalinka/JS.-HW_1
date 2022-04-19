@@ -5,7 +5,7 @@ function checkAge(age) {
 
 const parsed = parseInt(age, 10);
 if (isNaN(parsed)) { alert ("Error!");
-} else if (age>=10&&age<18){
+} else if (age<18){
     alert ("You don’t have access cause your age is "+ age + " It’s less then ");
 } else if (age>=18&&age<=60){
     alert ("Welcome !");

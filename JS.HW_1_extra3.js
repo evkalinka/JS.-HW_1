@@ -3,8 +3,9 @@ let age_2 = 18;
 let age_3 = 60;
 
 function checkAge(age) {
-const parsed = parseInt(age, 10);
-    if (isNaN(parsed)) { return ("Error!");
+    var age = new Number(age)
+    if (isNaN(age)) { 
+        return ("Error!");
     } else if (age<age_2){
         return ("You don’t have access cause your age is "+ age + " It’s less then ");
     } else if (age>=age_2&&age<=age_3){
@@ -16,4 +17,4 @@ const parsed = parseInt(age, 10);
     }
 }
 
-console.log(checkAge("2"));
+console.log(checkAge('2'));
